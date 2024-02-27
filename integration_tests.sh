@@ -53,7 +53,7 @@ RESPONSE_CODE=$(curl \
   --request "$METHOD" \
   --header "Accept: application/json" \
   --header "Content-Type: multipart/form-data" \
-  --form workflow_params='{"input":{"class":"File","path":"https://github.com/LCSB-BioCore/cwl-example-workflows/blob/master/resources/test.txt}}' \
+  --form workflow_params='{"input":{"class":"File","path":"https://github.com/LCSB-BioCore/cwl-example-workflows/blob/master/resources/test.txt"}}' \
   --form workflow_type="CWL" \
   --form workflow_type_version="v1.0" \
   --form workflow_url="https://github.com/LCSB-BioCore/cwl-example-workflows/blob/master/trs.echo/trs-echo.cwl" \
@@ -75,7 +75,7 @@ RESPONSE_CODE=$(curl \
   --request "$METHOD" \
   --header "Accept: application/json" \
   --header "Content-Type: multipart/form-data" \
-  --form workflow_params='{"input":{"class":"File","path":"drs:/iderha-test-central-node.org/K1yVjH"}}' \
+  --form workflow_params='{"input":{"class":"File","path":"drs:/iderha-test-central-node.org/8tWCMo"}}' \
   --form workflow_type="CWL" \
   --form workflow_type_version="v1.0" \
   --form workflow_url="https://github.com/LCSB-BioCore/cwl-example-workflows/blob/master/drs.echo/drs-echo.cwl" \
@@ -97,7 +97,7 @@ RESPONSE_CODE=$(curl \
   --request "$METHOD" \
   --header "Accept: application/json" \
   --header "Content-Type: multipart/form-data" \
-  --form workflow_params='{"input":{"class":"File","path":"drs://iderha-test-central-node.org/K1yVjH"}}' \
+  --form workflow_params='{"input":{"class":"File","path":"drs://iderha-test-central-node.org/8tWCMo"}}' \
   --form workflow_type="CWL" \
   --form workflow_type_version="v1.0" \
   --form workflow_url="https://github.com/LCSB-BioCore/cwl-example-workflows/blob/master/trs.echo/trs-echo.cwl" \

@@ -8,7 +8,7 @@ doc: "hash input through sha"
 
 hints:
   - class: DockerRequirement
-    dockerPull: kubler/openssl:20190330
+    dockerPull: kubler/openssl
 
 inputs:
   - id: input
