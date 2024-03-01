@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand: echo
 hints:
   - class: DockerRequirement
-    dockerPull: trs://trs-filer/W70VHH/versions/gndm03
+    dockerPull: trs://10.240.6.104/W70VHH/versions/gndm03
 
 inputs:
   - id: input
