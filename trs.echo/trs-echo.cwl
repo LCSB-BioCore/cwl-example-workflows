@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand: echo
 hints:
   - class: DockerRequirement
-    dockerPull: trs://iderha-test-central-node.org/W70VHH/versions/gndm03
+    dockerPull: trs://10.128.2.63/W70VHH/versions/gndm03
 
 inputs:
   - id: input
