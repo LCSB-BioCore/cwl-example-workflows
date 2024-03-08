@@ -1,6 +1,6 @@
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: echo
+baseCommand: cat
 hints:
   - class: DockerRequirement
     dockerPull: trs://trs-filer:8080/W70VHH/versions/gndm03
