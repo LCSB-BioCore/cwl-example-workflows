@@ -25,21 +25,21 @@ steps:
       - { id: output }
 
   - id: md6
-     run: hashsplitter-md6.cwl.yml
+     run: hashsplitter-md5.cwl.yml
      in:
        - { id: input, source: input }
      out:
        - { id: output }
 
   - id: md7
-     run: hashsplitter-md7.cwl.yml
+     run: hashsplitter-md5.cwl.yml
      in:
        - { id: input, source: input }
      out:
        - { id: output }
 
   - id: md8
-       run: hashsplitter-md8.cwl.yml
+       run: hashsplitter-md5.cwl.yml
        in:
          - { id: input, source: input }
        out:
