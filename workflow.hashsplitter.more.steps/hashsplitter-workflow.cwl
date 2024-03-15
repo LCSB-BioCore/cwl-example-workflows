@@ -85,19 +85,19 @@ steps:
     out:
       - { id: output }
   - id: whirlpool2
-      run: hashsplitter-whirlpool.cwl.yml
-      in:
-        - { id: input, source: input }
-      out:
-        - { id: output }
+    run: hashsplitter-whirlpool.cwl.yml
+    in:
+      - { id: input, source: input }
+    out:
+      - { id: output }
 
   - id: whirlpool3
-      run: hashsplitter-whirlpool.cwl.yml
-      in:
-        - { id: input, source: input }
-      out:
-        - { id: output }
-        
+    run: hashsplitter-whirlpool.cwl.yml
+    in:
+      - { id: input, source: input }
+    out:
+      - { id: output }
+
   - id: unify
     run: hashsplitter-unify.cwl.yml
     in:
