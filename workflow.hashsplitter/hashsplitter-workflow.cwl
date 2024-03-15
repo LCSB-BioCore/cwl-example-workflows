@@ -14,9 +14,7 @@ outputs:
     type: File
     outputSource: unify/output
 
-hints:
-    - md5 -> http://tesk.com
-    - sha -> http://tesk.com
+
 
 steps:
   - id: md5
