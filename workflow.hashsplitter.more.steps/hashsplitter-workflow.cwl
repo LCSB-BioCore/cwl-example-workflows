@@ -14,6 +14,8 @@ outputs:
     type: File
     outputSource: unify/output
 
+
+
 steps:
   - id: md5
     run: hashsplitter-md5.cwl.yml
@@ -22,13 +24,6 @@ steps:
     out:
       - { id: output }
 
-  - id: md52
-    run: hashsplitter-md5.cwl.yml
-    in:
-      - { id: input, source: input }
-    out:
-      - { id: output }
-      -
   - id: sha
     run: hashsplitter-sha.cwl.yml
     in:
@@ -36,21 +31,7 @@ steps:
     out:
       - { id: output }
 
-  - id: sha2
-    run: hashsplitter-sha.cwl.yml
-    in:
-      - { id: input, source: input }
-    out:
-      - { id: output }
-
   - id: whirlpool
-    run: hashsplitter-whirlpool.cwl.yml
-    in:
-      - { id: input, source: input }
-    out:
-      - { id: output }
-
-  - id: whirlpool2
     run: hashsplitter-whirlpool.cwl.yml
     in:
       - { id: input, source: input }
