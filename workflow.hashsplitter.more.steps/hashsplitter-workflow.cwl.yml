@@ -15,7 +15,7 @@ outputs:
     outputSource: unify/output
 
 steps:
-  - id: md10
+  - id: md5
     run: hashsplitter-md5.cwl.yml
     in:
       - { id: input, source: input }
