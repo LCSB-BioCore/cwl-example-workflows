@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand: cat
 hints:
   - class: DockerRequirement
-    dockerPull: trs://trs-filer:8080/W70VHH/versions/gndm03
+    dockerPull: trs://trs-filer:8080/4XQUH4/versions/kkgyx6
 
 inputs:
   - id: input
