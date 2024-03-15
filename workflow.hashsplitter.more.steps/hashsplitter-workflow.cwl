@@ -52,46 +52,8 @@ steps:
     out:
       - { id: output }
 
-  - id: sha1
-    run: hashsplitter-sha.cwl.yml
-    in:
-      - { id: input, source: input }
-    out:
-      - { id: output }
-
-  - id: sha2
-      run: hashsplitter-sha.cwl.yml
-      in:
-        - { id: input, source: input }
-      out:
-        - { id: output }
-  - id: sha3
-      run: hashsplitter-sha.cwl.yml
-      in:
-        - { id: input, source: input }
-      out:
-        - { id: output }
 
   - id: whirlpool
-    run: hashsplitter-whirlpool.cwl.yml
-    in:
-      - { id: input, source: input }
-    out:
-      - { id: output }
-  - id: whirlpool1
-    run: hashsplitter-whirlpool.cwl.yml
-    in:
-      - { id: input, source: input }
-    out:
-      - { id: output }
-  - id: whirlpool2
-    run: hashsplitter-whirlpool.cwl.yml
-    in:
-      - { id: input, source: input }
-    out:
-      - { id: output }
-
-  - id: whirlpool3
     run: hashsplitter-whirlpool.cwl.yml
     in:
       - { id: input, source: input }
@@ -102,6 +64,9 @@ steps:
     run: hashsplitter-unify.cwl.yml
     in:
       - { id: md5, source: md5/output }
+      - { id: md6, source: md6/output }
+      - { id: md7, source: md7/output }
+      - { id: md8, source: md8/output }
       - { id: sha, source: sha/output }
       - { id: whirlpool, source: whirlpool/output }
     out:
