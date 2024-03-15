@@ -25,7 +25,7 @@ outputs:
   - id: output
     type: stdout
 
-stdout: md5
+stdout: md6
 
 baseCommand: ["openssl", "dgst"]
 
