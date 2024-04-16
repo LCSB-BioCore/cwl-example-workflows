@@ -1,0 +1,26 @@
+#!/usr/bin/env cwl-runner
+
+cwlVersion: v1.0
+class: CommandLineTool
+
+doc: "Calculate average of numbers"
+
+inputs:
+  avg1:
+    type: File
+    inputBinding:
+      position: 1
+
+  avg2:
+    type: File
+    inputBinding:
+      position: 2
+
+outputs:
+  - id: output
+    type: stdout
+    doc: "Average of numbers"
+
+baseCommand: awk
+arguments:
+  - valueFrom: '{print ($1 + $2) / 2}'
