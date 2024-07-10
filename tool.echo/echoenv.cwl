@@ -17,11 +17,11 @@ arguments:
   - valueFrom: |
       echo "Printing Kubernetes environment variables:" && \
       echo "" && \
-      printenv | grep USER_ACCESS_TOKEN_EX && \
+      printenv | grep USER_ACCESS_TOKEN && \
       echo "" && \
       echo "------------------------------------------------------------" && \
       echo "" && \
-      echo "Echo Kubernetes environment variable - USER_ACCESS_TOKEN_EX:" && \
+      echo "Echo Kubernetes environment variable - USER_ACCESS_TOKEN:" && \
       echo "" && \
-      echo $USER_ACCESS_TOKEN_EX;
+      echo $USER_ACCESS_TOKEN;
 
