@@ -1,0 +1,22 @@
+{
+  "description": "Obtain the patient's age at death and type of death",
+  "tables": [
+      "person",
+      "death"
+  ],
+  "values": [
+      "person_id",
+      "year_of_birth",
+      "death_date",
+      "death_type_concept_id"
+  ],
+  "policy": {
+    "@context": "http://www.w3.org/ns/odrl.jsonld",
+    "@id": "contractOfferId",
+    "@type": "Set",
+    "permission": [],
+    "prohibition": [],
+    "obligation": [],
+    "target": "assetId"
+  }
+}
