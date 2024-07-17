@@ -21,7 +21,7 @@ arguments:
       echo "" && \
       echo "------------------------------------------------------------" && \
       echo "" && \
-      echo "Echo Kubernetes environment variable - $USER_PASSPORT_TOKEN:" && \
+      echo "Echo Kubernetes environment variable - USER_PASSPORT_TOKEN:" && \
       echo "" && \
       echo $USER_PASSPORT_TOKEN;
 
