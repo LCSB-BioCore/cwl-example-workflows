@@ -1,5 +1,5 @@
-class: CommandLineTool
 cwlVersion: v1.2
+class: CommandLineTool
 
 doc: "Task to send a cURL request to edc endpoint"
 
@@ -12,32 +12,20 @@ hints:
     nodeUri: $(inputs.nodeId)
 
 inputs:
-  url:
-    type: string
-  jsonFile:
+  - id: jsonFile
     type: File
-    loadContents: true
 
-  nodeId:
+  - id: nodeId
     type: string
-    default: "http://tesk-api:8080/ga4gh/tes/v1"
+    default: "http://tesk-api-node-1:8080/ga4gh/tes"
 
-outputs:
-  output:
-    type: stdout
+outputs: []
+#  output:
+#    type: stdout
+#
+#stdout: curl-output.txt
 
-stdout: curl-output.txt
-
-
-#baseCommand: echo
-#arguments:
-#  - "curl POST"
-#  - '-H "Content-Type: application/json"'
-
-baseCommand: "curl"
+baseCommand: sh
 arguments:
-  - '-H "Content-Type: application/json"'
-  - '--location'
-  - $(inputs.url)
-  - '--data-raw'
-  - $(inputs.jsonFile.contents)
+  - -c
+  - "curl -H Content-Type:application/json -H \"Authorization:Bearer $USER_PASSPORT_TOKEN\" --location http://edc-provider:19191/api/access --data @$(inputs.jsonFile.path)"
