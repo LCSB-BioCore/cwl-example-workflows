@@ -4,11 +4,13 @@ class: Workflow
 cwlVersion: v1.0
 
 inputs:
-  - id: input
-    type: File
+    input:
+        type: File
 
-  - id: input2
-    type: File
+    input2:
+        type: File
+        inputBinding:
+              position: 1
 
 outputs:
   - id: aggregated
