@@ -18,35 +18,30 @@ steps:
   - id: pull_1
     run: aggregate-pulldata.cwl.yml
     in:
-      - { id: input, source: input }
-    out:
-      - datalink
+      input: input
+    out: [datalink]
 
   - id: aggregate_1
     run: aggregate-remote.cwl.yml
     in:
-      - { id: input, source: pull_1/datalink }
-    out:
-      - partial
+      input: pull_1/datalink
+    out: [partial]
 
   - id: pull_2
     run: aggregate-pulldata2.cwl.yml
     in:
-      - { id: input2, source: input2 }
-    out:
-      - datalink
+      input2: input2
+    out: [datalink]
 
   - id: aggregate_2
     run: aggregate-remote2.cwl.yml
     in:
-      - { id: input2, source: pull_2/datalink }
-    out:
-      - partial
+      input: pull_2/datalink
+    out: [partial]
 
   - id: aggregate_final
     run: aggregate-central.cwl.yml
     in:
-      - { id: input-remote-1, source: aggregate_1/partial }
-      - { id: input-remote-2, source: aggregate_2/partial }
-    out:
-      - { id: output }
+      input-remote-1: aggregate_1/partial
+      input-remote-2: aggregate_2/partial
+    out: [output]
