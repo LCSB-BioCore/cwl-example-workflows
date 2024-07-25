@@ -50,4 +50,4 @@ steps:
       - { id: input-remote-1, source: aggregate_1/partial }
       - { id: input-remote-2, source: aggregate_2/partial }
     out:
-      - { id: final-output }
+      - { id: output }

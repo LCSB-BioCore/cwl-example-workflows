@@ -27,7 +27,7 @@ inputs:
       position: 2
 
 outputs:
-  - id: final-output
+  - id: output
     type: File
     doc: "The aggregated values from all partial data"
     outputBinding:
