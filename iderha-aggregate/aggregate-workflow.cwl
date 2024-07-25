@@ -8,8 +8,6 @@ inputs:
         type: File
     input2:
         type: File
-        inputBinding:
-              position: 1
 
 outputs:
   - id: aggregated
