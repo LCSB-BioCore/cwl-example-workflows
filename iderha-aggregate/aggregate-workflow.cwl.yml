@@ -1,5 +1,4 @@
 #!/usr/bin/env cwl-runner
-#testing
 
 class: Workflow
 cwlVersion: v1.0
