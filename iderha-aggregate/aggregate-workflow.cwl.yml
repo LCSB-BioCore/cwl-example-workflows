@@ -6,7 +6,6 @@ cwlVersion: v1.0
 inputs:
   input:
     type: File
-
   input2:
     type: File
     inputBinding:
