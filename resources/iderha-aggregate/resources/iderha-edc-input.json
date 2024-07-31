@@ -1,7 +1,7 @@
 {
     "TRANSFER_TYPE": "push",
     "X_API_KEY": "password",
-    "ASSET_ID": "assetId",
+    "ASSET_ID": "ef2e5489-4a0e-4b2e-bfc5-268e0c96952e",
     "EDC_CONSUMER_ID": "consumer",
     "EDC_PROVIDER_ID": "provider",
     "EDC_CONSUMER_MANAGEMENT_URL": "http://edc-consumer:29193/management",
