@@ -25,4 +25,5 @@ baseCommand: ["sh", "-c"]
 arguments:
   - |
     /app/edc_client.sh $(inputs.input.path) > output.txt && \
-    cat output.txt  # This prints the FTP URL to standard output
+    first_line=$(head -n 1 output.txt) && \
+    echo "Extracted FTP URL: $first_line"
