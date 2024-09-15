@@ -9,7 +9,7 @@ inputs:
 
 steps:
   extract_ftp_url:
-    run: aggregate-pulldata-nvflare.cwl  # The first CWL tool
+    run: aggregate-pulldata.cwl.yml  # The first CWL tool
     in:
       input: input
     out: [ftp_url]
