@@ -4,14 +4,14 @@ cwlVersion: v1.0
 class: Workflow
 
 inputs:
-  input_file:
+  input:
     type: File  # Input for the first step
 
 steps:
   extract_ftp_url:
     run: aggregate-pulldata-nvflare.cwl  # The first CWL tool
     in:
-      input: input_file
+      input: input
     out: [ftp_url]
 
   print_ftp_url:
