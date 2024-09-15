@@ -9,13 +9,13 @@ inputs:
 
 steps:
   extract_ftp_url:
-    run: extract_ftp_url.cwl  # The first CWL tool
+    run: aggregate-pulldata-nvflare.cwl  # The first CWL tool
     in:
       input: input_file
     out: [ftp_url]
 
   print_ftp_url:
-    run: aggregate-pulldata-nvflare-print.cwl  # The second CWL tool (printing the FTP URL)
+    run: print_ftp_url.cwl  # The second CWL tool (printing the FTP URL)
     in:
       ftp_url: extract_ftp_url/ftp_url  # Pass the FTP URL from step1
     out: [printed_output]
