@@ -21,7 +21,7 @@ outputs:
   - id: output
     type: stdout
 
-stdout: whirpool
+stdout: whirlpool
 
 baseCommand: ["openssl", "dgst"]
 
