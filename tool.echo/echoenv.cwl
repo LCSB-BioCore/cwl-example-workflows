@@ -5,6 +5,8 @@ baseCommand: [sh, -c]
 hints:
   - class: DockerRequirement
     dockerPull: alpine
+  - class: CentralStorageRequirement
+    centralStorage: True
 
 requirements:
   - class: InlineJavascriptRequirement
@@ -25,3 +27,4 @@ arguments:
       echo "" && \
       echo $USER_PASSPORT_TOKEN;
 
+stdout: printed_savecentral.txt
