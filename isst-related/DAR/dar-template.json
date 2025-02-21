@@ -1,0 +1,40 @@
+{
+    "id": "%DataAccessRequestId%",
+    "description": "%AdditionalInfo%",
+    "tables": [
+        "condition_era"
+    ],
+    "values": [
+        "condition_era_id",
+        "condition_concept_id",
+        "condition_era_start_date",
+        "condition_era_end_date"
+    ],
+    "policyDefinition": {
+        "@context": {
+            "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+            "odrl": "http://www.w3.org/ns/odrl/2/"
+        },
+        "@id": "90e1130f-83a2-4ff4-a5a2-fb3522be3814",
+        "policy": {
+            "@type": "Set",
+            "odrl:target": "%RequestedAssetId%",
+            "odrl:assignee": "Iderha Steward",
+            "odrl:permission": [],
+            "odrl:prohibition": [],
+            "odrl:obligation": [
+                {
+                    "odrl:action": "use",
+                    "odrl:constraint": [
+                        {
+                            "odrl:leftOperand": "fileName",
+                            "odrl:operator": "eq",
+                            "odrl:rightOperand": "%FileName%",
+                            "odrl:comment": "Data access application form completed by the data consumer"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
