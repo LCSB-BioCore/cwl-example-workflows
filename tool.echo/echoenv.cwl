@@ -7,6 +7,9 @@ hints:
     dockerPull: alpine
   - class: CentralStorageRequirement
     centralStorage: True
+  - RemoteLocationRequirement:
+    nodeUri: http://tesk-api-node-1:8080/ga4gh/tes/
+
 
 requirements:
   - class: InlineJavascriptRequirement
