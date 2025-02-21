@@ -8,7 +8,7 @@ hints:
   - class: CentralStorageRequirement
     centralStorage: True
   - class: RemoteLocationRequirement
-    nodeUri: http://tesk-api-node-1:8080/ga4gh/tes/
+    nodeUri: http://tesk-api-node-2:8080/ga4gh/tes/
 
 
 requirements:
