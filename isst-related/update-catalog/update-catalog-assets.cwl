@@ -39,6 +39,9 @@ steps:
     out: [policyMapping]
 
   addLocations:
+    hints:
+      - class: CentralStorageRequirement
+        centralStorage: true
     run: add-policies-locations.cwl
     in:
       location: location
