@@ -29,6 +29,9 @@ steps:
     run: get-assets-metadata.cwl
 
   getAssetPolicies:
+    hints:
+          - class: CentralStorageRequirement
+            centralStorage: true
     run: get-assets-policies.cwl
     in:
       location: location
