@@ -3,7 +3,7 @@ class: Workflow
 
 hints:
   RemoteLocationRequirement:
-    nodeUri: $(inputs.nodeId)
+    nodeUri: "http://tesk-api-node-2:8080/ga4gh/tes/"
 
 inputs:
   input: File
