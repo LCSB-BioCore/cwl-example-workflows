@@ -1,7 +1,9 @@
 cwlVersion: v1.2
 class: Workflow
 
-
+hints:
+  RemoteLocationRequirement:
+    nodeUri: $(inputs.nodeId)
 
 inputs:
   input: File
