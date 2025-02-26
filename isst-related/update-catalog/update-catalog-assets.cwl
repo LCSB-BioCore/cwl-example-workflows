@@ -18,9 +18,6 @@ outputs: []
 
 steps:
   getMetadata:
-    hints:
-      - class: CentralStorageRequirement
-        centralStorage: true
     in:
       jsonTemplate: jsonTemplate
       location: location
@@ -29,9 +26,6 @@ steps:
     run: get-assets-metadata.cwl
 
   getAssetPolicies:
-    hints:
-          - class: CentralStorageRequirement
-            centralStorage: true
     run: get-assets-policies.cwl
     in:
       location: location
@@ -39,6 +33,9 @@ steps:
     out: [policyMapping]
 
   addLocations:
+    hints:
+      - class: CentralStorageRequirement
+        centralStorage: true
     run: add-policies-locations.cwl
     in:
       location: location
@@ -47,6 +44,9 @@ steps:
     out: [updatedDCAT]
 
   updateCatalog:
+    hints:
+      - class: CentralStorageRequirement
+        centralStorage: true
     in:
       assetsMetadataFile:
         source: [addLocations/updatedDCAT]
