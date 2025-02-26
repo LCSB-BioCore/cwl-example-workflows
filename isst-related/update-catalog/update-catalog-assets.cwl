@@ -18,6 +18,9 @@ outputs: []
 
 steps:
   getMetadata:
+    hints:
+      - class: CentralStorageRequirement
+        centralStorage: true
     in:
       jsonTemplate: jsonTemplate
       location: location
