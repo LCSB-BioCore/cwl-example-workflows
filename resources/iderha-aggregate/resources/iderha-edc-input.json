@@ -1,7 +1,7 @@
 {
     "TRANSFER_TYPE": "push",
     "X_API_KEY": "password",
-    "ASSET_ID": "assetId",
+    "ASSET_ID": "2dd0e464-ab13-4c88-b859-0f98c076db19",
     "EDC_CONSUMER_ID": "consumer",
     "EDC_PROVIDER_ID": "provider",
     "EDC_PROVIDER_PROTOCOL_URL": "http://edc-provider:19194/protocol",
