@@ -10,12 +10,11 @@ inputs:
     type: string
 
 inputs:
-  input:
+  - id: input
     type: File
-  nodeId:
+  - id: nodeId
     type: string
     default: "http://tesk-api-node-1:8080/ga4gh/tes"
-
 steps:
   upload:
     run: ftp_upload_file.cwl

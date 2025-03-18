@@ -10,9 +10,9 @@ inputs:
     type: string
 
 inputs:
-  input:
+  - id: input
     type: File
-  nodeId:
+  - id: nodeId
     type: string
     default: "http://tesk-api-node-2:8080/ga4gh/tes"
 
