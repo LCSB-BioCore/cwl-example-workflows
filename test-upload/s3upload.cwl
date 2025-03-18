@@ -2,17 +2,12 @@ cwlVersion: v1.0
 class: Workflow
 
 hints:
-  RemoteLocationRequirement:
-    nodeUri: $(inputs.nodeId)
-
+  - class: RemoteLocationRequirement
+    nodeUri: "http://tesk-api-node-2:8080/ga4gh/tes"
 
 inputs:
-  - id: input
+  input:
     type: File
-
-  - id: nodeId
-    type: string
-    default: "http://tesk-api-node-2:8080/ga4gh/tes"
 
 steps:
   upload:
