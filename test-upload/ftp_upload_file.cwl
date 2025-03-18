@@ -14,8 +14,10 @@ baseCommand: [curl]
 arguments:
   - "-X"
   - "POST"
-  - "-F"
-  - "file=@$(inputs.file.path)"
+  - "-H"
+  - "Content-Type: application/octet-stream"
+  - "--data-binary"
+  - "@$(inputs.file.path)"
   - "http://service-upload:8080/api/ftp/upload"
 
 
