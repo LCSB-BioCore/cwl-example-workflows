@@ -6,12 +6,9 @@ hints:
     nodeUri: $(inputs.nodeId)
 
 inputs:
-  nodeId:
-    type: string
-
-inputs:
   - id: input
     type: File
+
   - id: nodeId
     type: string
     default: "http://tesk-api-node-1:8080/ga4gh/tes"
