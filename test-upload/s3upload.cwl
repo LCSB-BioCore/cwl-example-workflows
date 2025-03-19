@@ -6,7 +6,6 @@ hints:
     nodeUri: $(inputs.nodeId)
 
 requirements:
-  StepInputExpressionRequirement: {}
   InlineJavascriptRequirement: {}
 
 
