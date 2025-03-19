@@ -11,11 +11,13 @@ requirements:
 
 
 inputs:
-  - id: input
+  input:
     type: File
-  - id: nodeId
+  nodeId:
     type: string
     default: "http://tesk-api-node-2:8080/ga4gh/tes"
+    inputBinding:
+          position: 2
 
 steps:
   upload:
