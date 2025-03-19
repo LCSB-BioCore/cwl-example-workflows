@@ -1,5 +1,5 @@
 doc: "Copies the uploaded file to another location"
-cwlVersion: v1.0
+cwlVersion: v1.2
 class: CommandLineTool
 
 inputs:

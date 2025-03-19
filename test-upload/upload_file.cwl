@@ -1,5 +1,5 @@
 doc: "Uploads a file to S3"
-cwlVersion: v1.0
+cwlVersion: v1.2
 class: CommandLineTool
 
 inputs:
