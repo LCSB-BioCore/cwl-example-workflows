@@ -1,32 +1,31 @@
 cwlVersion: v1.2
 class: Workflow
 
-hints:
-  RemoteLocationRequirement:
-    nodeUri: $(inputs.nodeId)
-
 requirements:
+  StepInputExpressionRequirement: {}
   InlineJavascriptRequirement: {}
 
-
 inputs:
-  - id: input
+  input:
     type: File
-  - id: nodeId
+  nodeId:
     type: string
     default: "http://tesk-api-node-1:8080/ga4gh/tes"
+
 
 steps:
   upload:
     run: ftp_upload_file.cwl
     in:
       file: input
+      nodeId: nodeId
     out: [uploaded_file]
 
   copy:
     run: copy_tool.cwl
     in:
-      file: upload/uploaded_file
+      input: upload/uploaded_file
+      nodeId: nodeId
     out: [copied_file]
 
 outputs:
