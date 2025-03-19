@@ -5,6 +5,10 @@ requirements:
   StepInputExpressionRequirement: {}
   InlineJavascriptRequirement: {}
 
+hints:
+  - class: RemoteLocationRequirement
+    nodeUri: $(inputs.nodeId)
+
 inputs:
   input:
     type: File

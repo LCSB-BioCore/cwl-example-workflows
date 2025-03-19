@@ -2,17 +2,11 @@ doc: "Copies the uploaded file to another location"
 cwlVersion: v1.2
 class: CommandLineTool
 
-hints:
-  - class: RemoteLocationRequirement
-    nodeUri: $(inputs.nodeId)
-
 inputs:
   - id: input
     type: File
   - id: nodeId
     type: string
-
-
 
 outputs:
   copied_file:

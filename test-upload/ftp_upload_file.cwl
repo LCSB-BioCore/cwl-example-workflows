@@ -2,16 +2,11 @@ doc: "Uploads a file to S3"
 cwlVersion: v1.2
 class: CommandLineTool
 
-hints:
-  - class: RemoteLocationRequirement
-    nodeUri: $(inputs.nodeId)
-
 inputs:
   - id: file
     type: File
   - id: nodeId
     type: string
-
 
 outputs:
   uploaded_file:

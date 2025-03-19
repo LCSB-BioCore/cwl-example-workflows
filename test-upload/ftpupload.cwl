@@ -5,13 +5,16 @@ requirements:
   StepInputExpressionRequirement: {}
   InlineJavascriptRequirement: {}
 
+hints:
+  - class: RemoteLocationRequirement
+    nodeUri: $(inputs.nodeId)
+
 inputs:
   input:
     type: File
   nodeId:
     type: string
     default: "http://tesk-api-node-1:8080/ga4gh/tes"
-
 
 steps:
   upload:
