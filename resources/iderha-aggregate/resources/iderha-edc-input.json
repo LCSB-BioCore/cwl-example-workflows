@@ -9,6 +9,6 @@
     "EDR_ENDPOINT_URL": "http://edc-consumer:29191/api/edr/query",
     "DATA_DESTINATION_URL": "http://echo-server:8080",
     "FTP_DATA_ADDRESS": "ftp://10.240.6.96/home/ftp_iderha_user/ftp_upload/isst-data-iderha-remote-node-1-test.txt",
-    "OUTPUT_FILE": "output.txt",
+    "OUTPUT_FILE": "/tmp/output",
     "GATEWAY_ADDRESS": "http://gateway-service:5000"
 }
