@@ -1,6 +1,4 @@
 {
-    "TRANSFER_TYPE": "push",
-    "X_API_KEY": "password",
     "ASSET_ID": "2dd0e464-ab13-4c88-b859-0f98c076db19",
     "EDC_CONSUMER_ID": "ae62d168-5657-4614-ac9a-3c4d8cad5504",
     "EDC_PROVIDER_ID": "provider",
