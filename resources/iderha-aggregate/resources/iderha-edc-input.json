@@ -1,7 +1,7 @@
 {
     "ASSET_ID": "75cc9c49-2828-4439-ac4e-29c5113d4530",
     "EDC_CONSUMER_ID": "ae62d168-5657-4614-ac9a-3c4d8cad5504",
-    "EDC_PROVIDER_ID": "ae62d168-5657-4614-ac9a-3c4d8cad5504",
+    "EDC_PROVIDER_ID": "399054e0-f4a2-468f-8666-b45440389a51",
     "EDC_PROVIDER_PROTOCOL_URL": "http://edc-provider:19194/protocol",
     "EDC_PROVIDER_PUBLIC_URL": "http://edc-provider:19291/public",
     "DATA_DESTINATION_URL": "http://service-upload:8080/api/s3/upload",
